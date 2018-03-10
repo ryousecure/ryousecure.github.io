@@ -30,14 +30,21 @@ $(document).ready(function(){
 	        $("#register").hide("fast");
 	        $("#back").hide("fast");
 	        $(".main").hide("fast");
+	        $("#select").hide("fast");
 	    	  
 	    });
 	});
 $(document).ready(function(){
 		
 	    $(".sub-btn").click(function(){
-	        //$(".main").fadeOut("fast");
+	        $(".main").fadeOut("fast");
 	    	  
+	    });
+	});
+$(document).ready(function(){
+		
+	    $("#ac").click(function(){
+	        $("#act").show("slow");
 	    });
 	});
 function Validate() {
@@ -48,16 +55,22 @@ function Validate() {
             alert("Passwords do not match.");
             return false;
         }
+
         else if(password == ""){
-        	
+        	alert("Please Fill All Details!")
         	return true;
 			}
+
 		else{
 			$(document).ready(function(){
-			 $("#reg").fadeIn("slow");
-
+			 //$("#select").fadeIn("slow");
+			 $(".main").hide("fast");
 	           
 	    });
-	};
+	}
 		
     }	
+    function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    document.getElementById("demo").innerHTML =  x;
+}

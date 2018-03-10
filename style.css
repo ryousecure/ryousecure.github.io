@@ -1,10 +1,17 @@
 body{
 	font-family: "avenir"; 
 	background: #4568DC;  /* fallback for old browsers */
+	background-repeat:no-repeat; 
 	background: -webkit-linear-gradient(to bottom, #B06AB3, #4568DC)fixed;  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to bottom, #B06AB3, #4568DC)fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color:#f1f1f1;
 	text-align:center; 
+}
+#select{
+	display: none;
+}
+#act{
+	display: none;
 }
 #submit{
 margin-left: 30%;

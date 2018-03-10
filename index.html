@@ -26,37 +26,9 @@
 			</p>
 		</div>
 	</div>
-
-	<!--div id="register">
-		<div id="regIntro">
-			<p>
-				
-			</p>
-		</div>
-		<div id="email">
-			 Email :
-			<input type="email" placeholder="Enter Email"></input>
-		</div><br>
-		<div id="username">
-			 Username:
-			<input type="text" placeholder="Enter Username" id="un"></input>
-		</div><br>
-		<div id="password">
-			Password:
-			<input type="password" id="txtPassword" placeholder="Enter Password" minlength="6"></input>
-		</div><br>
-		<div id="confirmPassword">
-			Confirm Password:
-			<input type="password"  placeholder="Re-Enter password" minlength="6"></input>
-		</div>
-		<div id="submit">
-			<input type="button" id="btnSubmit" value="Register" onclick="return Validate()"></button>
-		</div>
-		
-	</div-->
-	<div id="regiser" class="main">
+	<div id="register" class="main">
 					<div class="info" id="regIntro">Please Register to file a complaint.</div>
-						<form action="#" method="post" name="form" class="form-box">
+						<form action="register.php" method="post" name="form" class="form-box">
 							<label for="name">Email</label><br>
 								<input type="email" name="name" class="inp" placeholder="Enter Your Email" required><br>
 							<label for="email">Username</label><br>
@@ -65,10 +37,35 @@
 								<input type="Password" name="phone" class="inp" id="txtPassword" placeholder="Enter Your Password" required><br>
 							<label for="message">Confirm-Password</label><br>
 								<input type="Password" name="phone" class="inp" id="txtConfirmPassword" placeholder="Re-Enter Password" required><br>
-							<input type="button" type="submit" name="submit" value="Register" class="sub-btn" onclick="return Validate()">
+							<input type="submit" type="submit" name="submit" value="Register" class="sub-btn" onclick="return Validate()">
 						</form>
 				</div><br>
+		<div id="select">
+			<p>
+				Select a Category.
+			<select id="mySelect" onchange="myFunction()">
+			  <option value="Whenever Someone abuses or uses bad words withing your conversations">Abusive Chat
+			  <option value="Bank fraud is the use of potentially illegal means to obtain money, assets, or other property owned or held by a financial institution, or to obtain money from depositors by fraudulently posing as a bank or other financial institution. ">Banking Fraud
+			  <option value="Credit card fraud is a wide-ranging term for theft and fraud committed using or involving a payment card, such as a credit card or debit card, as a fraudulent source of funds in a transaction.">Credit Card Fraud
+			  <option value="Cyberstalking is the use of the Internet or other electronic means to stalk or harass an individual, group, or organization. It may include false accusations, defamation, slander and libel. It may also include monitoring, identity theft, threats, vandalism, solicitation for sex, or gathering information that may be used to threaten them">Cyber Stalking	
+			  <option value="It is the unauthorized access to, or manipulation of, an email account or email correspondence. Spam, Virus,  Phishing. etc">Email Hacking
+			  <option value="It is the attempt to obtain sensitive information such as usernames, passwords, and credit card details (and money), often for malicious reasons, by disguising as a trustworthy entity in an electronic communication.">Phising
+			  <option value="Mature content may contain graphic images or child pornography which is punishable Under Section 67 of the Information Technology Act, 2000 makes the following acts punishable with imprisonment upto 3 years and fine upto 5 lakhs:">Mature Content
+			  <option value="The general function of social hacking is to gain access to restricted information or to a physical space without proper permission. ">Social Profile Hacking
+			  <option value="It is an attack on a website that changes the visual appearance of the site or a webpage. These are typically the work of defacers, who break into a web server and replace the hosted website with one of their own. Defacement is generally meant as a kind of electronic graffiti and, as other forms of vandalism, is also used to spread messages by politically motivated cyber protesters or hacktivists">Website hacking
+			  <option value="Spoofing, in general, is a fraudulent or malicious practice in which communication is sent from an unknown source disguised as a source known to the receiver. Spoofing is most prevalent in communication mechanisms that lack a high level of security.">Spoofing
+			  <option value="Trojans may allow an attacker to access users' personal information such as banking information, passwords, or personal identity (IP address). It can infect other devices connected to the network. Ransomware attacks are often carried out using a Trojan	">Virus or Trojan Attack
+			</select>
+				
+			</p>
+		</div>
 
+
+<p id="demo"></p>
+
+<script>
+
+</script>
 
 	<div id="bottomBar">
 		<div id="back">
